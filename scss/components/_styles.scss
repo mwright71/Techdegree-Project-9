@@ -23,9 +23,17 @@
 
 h1 {
     font-family: HomepageBaukastenBold;
+    font-size: 30px;
+    @media (min-width: 768px) {
+        font-size: 48px;
+    }
 }
 h4 {
     font-family: HomepageBaukasten;
+    font-size: 24px;
+    @media (min-width: 768px) {
+        font-size: 48px;
+    }
 }
 header {
     background-color: #FF8200;
@@ -45,6 +53,16 @@ body {
     width: 30px;
     margin: 15px 5px;
     cursor: pointer;
+}
+
+.main {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 60px;
+    text-align: center;
+    @media (min-width: 768px) {
+        text-align: left;
+    }
 }
 
 

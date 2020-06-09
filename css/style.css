@@ -367,10 +367,22 @@ template {
 
 h1 {
   font-family: HomepageBaukastenBold;
+  font-size: 30px;
+}
+@media (min-width: 768px) {
+  h1 {
+    font-size: 48px;
+  }
 }
 
 h4 {
   font-family: HomepageBaukasten;
+  font-size: 24px;
+}
+@media (min-width: 768px) {
+  h4 {
+    font-size: 48px;
+  }
 }
 
 header {
@@ -394,6 +406,18 @@ body {
   width: 30px;
   margin: 15px 5px;
   cursor: pointer;
+}
+
+.main {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 60px;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .main {
+    text-align: left;
+  }
 }
 
 :root {
@@ -501,11 +525,7 @@ body {
   text-decoration: none;
   color: white;
   font-size: 18px;
-}
-@media (min-width: 768px) {
-  .menu a {
-    font-size: 24px;
-  }
+  text-transform: uppercase;
 }
 
 .menu a:hover {
