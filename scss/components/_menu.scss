@@ -1,0 +1,112 @@
+:root {
+    --primary-color: rgba(13, 110, 139, 0.75);
+    --overlay-color: rgba(24, 39, 51, 0.85);
+    --menu-speed: 0.75s;
+}
+.menuWrap {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+.menuWrap .toggler {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    opacity: 0;
+}
+
+.menuWrap .hamburger {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    width: 60px;
+    height: 60px;
+    padding: 1rem;
+    background-color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menuWrap .hamburger > div {
+    position: relative;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s ease;
+}
+.menuWrap .hamburger > div::before,
+.menuWrap .hamburger > div:after {
+    content:'';
+    position: absolute;
+    z-index: 1;
+    top: -10px;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+}
+.menuWrap .hamburger > div:after {
+    top: 10px;
+}
+
+// animate 
+.menuWrap .toggler:checked + .hamburger > div {
+    transform: rotate(135deg);
+}
+
+// turn into X
+.menuWrap .toggler:checked + .hamburger > div:before,
+.menuWrap .toggler:checked + .hamburger > div:after {
+    top: 0;
+    transform: rotate(90deg);
+}
+// rotate on hover when chcked
+
+.menuWrap .toggler:checked:hover + .hamburger > div {
+    transform: rotate(225deg);
+}
+
+.menuWrap .menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 30%;
+    height: 30%;
+    visibility: hidden;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menu {
+    background-color: #FF8200;
+    opacity: 0.8;
+}
+.menu li {
+    list-style: none;
+    margin: 15px;
+}
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    @media (min-width: 768px) {
+        font-size: 24px;
+    }
+}
+.menu a:hover {
+    color: aquamarine;
+}
+
+.menuWrap .toggler:checked ~ .menu {
+    visibility: visible;   
+}

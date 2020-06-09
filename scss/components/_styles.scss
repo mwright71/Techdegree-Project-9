@@ -1,0 +1,50 @@
+@font-face {
+    font-family: HomepageBaukasten;
+    src: url(../../fonts/HomepageBaukasten-Book.ttf);
+}
+@font-face {
+    font-family: HomepageBaukastenBold;
+    src: url(../../fonts/HomepageBaukasten-Bold.ttf);
+}
+@font-face {
+    font-family: Goudy;
+    src: url("../../fonts/Goudy\ Oldstyle\ Std\ Regular.otf");
+}
+:root {
+    --primary-color: rgba(13, 110, 139, 0.75);
+    --overlay-color: rgba(24, 39, 51, 0.85);
+    --menu-speed: 0.75s;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: HomepageBaukastenBold;
+}
+h4 {
+    font-family: HomepageBaukasten;
+}
+header {
+    background-color: #FF8200;
+    height: 60px;
+}
+body {
+    position: relative;
+    background: url("../../images/tulsa-skyline_bw.png") no-repeat center center/cover;
+    height: 100vh;
+}
+.socialNav {
+    margin-left: 15px;
+}
+.socialIcon {
+    fill: white;
+    height: 30px;
+    width: 30px;
+    margin: 15px 5px;
+    cursor: pointer;
+}
+
+
