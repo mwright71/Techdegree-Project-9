@@ -1,0 +1,75 @@
+.socialNav {
+    display: flex;
+}
+header {
+    grid-area: header;
+    @media (min-width: 1024px) {
+        display: none;
+    }
+}
+main {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "primary";
+    @media(min-width: 1024px) {
+        grid-template-columns: 400px 1fr;
+        grid-template-areas:
+        "sidebar primary";
+    }
+}
+.primary {
+    grid-area: primary;
+}
+.sidebar {
+    position: relative;
+    display: none;
+    grid-area: sidebar;
+    @media (min-width: 1024px) {
+       display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "sidebarinfo"
+        "menu2"
+        "footernav";
+    }
+}
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 60px 1fr;
+    grid-template-areas:
+    "header"
+    "main";
+    @media (min-width: 1024px) {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "main";
+    }
+}
+.sidebarInfo {
+    grid-area: sidebarinfo;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+}
+.footerNav {
+    grid-area: footernav;
+    grid-row-start: -1;
+    @media (min-width: width 1024px){
+        display: flex;
+        justify-items: center;
+        align-items: center;
+    }
+}
+.menu2 {
+    grid-area: menu2;
+}
+.btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

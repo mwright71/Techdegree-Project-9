@@ -10,11 +10,10 @@
     font-family: Goudy;
     src: url("../../fonts/Goudy\ Oldstyle\ Std\ Regular.otf");
 }
-:root {
-    --primary-color: rgba(13, 110, 139, 0.75);
-    --overlay-color: rgba(24, 39, 51, 0.85);
-    --menu-speed: 0.75s;
-}
+
+$background: #FF8200;
+$maintext: #fff;
+$sectext: #58595B;
 * {
     box-sizing: border-box;
     margin: 0;
@@ -46,16 +45,22 @@ body {
 }
 .socialNav {
     margin-left: 15px;
+    
 }
 .socialIcon {
-    fill: white;
+    fill: $maintext;
     height: 30px;
     width: 30px;
     margin: 15px 5px;
     cursor: pointer;
+    transition: all 0.2s ease;
+}
+.socialIcon:hover {
+    fill: $sectext;
+    transform: scale(1.2);
 }
 
-.main {
+.primary {
     width: 90%;
     margin: 0 auto;
     margin-top: 60px;
@@ -65,4 +70,95 @@ body {
     }
 }
 
+.sidebar {
+    background-color: #FF8200;
+    opacity: 0.9;
+    width: 400px;
+    height: 100vh;
+}
+.profile {
+    width: 160px;
+    height: 160px;
+    margin: 0 auto;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    border: 2px solid $maintext;
+}
+.sidebarInfo h2{
+    text-transform: uppercase;
+    font-family: Goudy;
+    color: $maintext;
+    font-weight: normal;
+    font-size: 36px;
+}
 
+.sidebarInfo p {
+    color: $maintext;
+    font-family: HomepageBaukasten;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.05em;
+}
+.menu2 {
+    margin: 40px 0 0 25px;
+}
+.menu2 li{
+    list-style: none;
+    font-family: HomepageBaukasten;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+.menu2 a{
+    color: $maintext;
+    text-decoration: none;
+}
+.menu2 a:hover{
+    color: $sectext;
+    
+}
+.sidebar h6 {
+    color: $maintext;
+    text-transform: uppercase;
+    font-family: HomepageBaukasten;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 15px;
+}
+.footerNav {
+    margin-left: 25px;
+}
+.btn {
+    margin-top: 50px;
+}
+
+.btn button {
+   background-color: transparent;
+   margin-top: 20px;
+   width: 178px;
+   height: 50px;
+   font-family: HomepageBaukasten;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 18px;
+   letter-spacing: 0.05em;
+   text-transform: uppercase;
+   box-shadow: none;
+   border: 2px solid black;
+   border-radius: 5px;
+   transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.btn button:hover {
+    background-color: $sectext;
+    opacity: 0.8;
+    color: $maintext;
+    transform: scale(1.2);
+}
