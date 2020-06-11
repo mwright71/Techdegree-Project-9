@@ -389,6 +389,7 @@ body {
 @media (min-width: 1024px) {
   body {
     grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
     grid-template-areas: "main";
   }
 }
@@ -423,9 +424,10 @@ body {
   flex-direction: column;
   align-items: center;
 }
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .btn {
     align-items: flex-start;
+    margin-left: 30px;
   }
 }
 
