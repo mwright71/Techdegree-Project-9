@@ -72,4 +72,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    @media (min-width: 768px) {
+        align-items: flex-start;
+    }
 }
