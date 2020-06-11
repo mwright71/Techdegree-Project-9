@@ -26,6 +26,7 @@ main {
     position: relative;
     display: none;
     grid-area: sidebar;
+    // grid-row-end: -1;
     @media (min-width: 1024px) {
        display: grid;
         grid-template-columns: 1fr;

@@ -38,10 +38,10 @@ header {
     background-color: #FF8200;
     height: 60px;
 }
-body {
+.container {
     position: relative;
     background: url("../../images/tulsa-skyline_bw.png") no-repeat center center/cover;
-    height: 100vh;
+    background-size: 100%;
 }
 .socialNav {
     margin-left: 15px;
@@ -69,7 +69,9 @@ body {
         text-align: left;
     }
 }
-
+// .main {
+//     height: 100vh;
+// }
 .sidebar {
     background-color: #FF8200;
     opacity: 0.9;

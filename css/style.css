@@ -474,10 +474,10 @@ header {
   height: 60px;
 }
 
-body {
+.container {
   position: relative;
   background: url("../../images/tulsa-skyline_bw.png") no-repeat center center/cover;
-  height: 100vh;
+  background-size: 100%;
 }
 
 .socialNav {
