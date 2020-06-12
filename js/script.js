@@ -2,12 +2,15 @@ const buttons = document.getElementById('projectBtns');
 const dashboard = document.getElementById('dashboard');
 const wheelGame = document.getElementById('wheel');
 
-buttons.addEventListener('click', e => {
-    if(e.target.className === 'dashboardBtn') {
-        dashboard.style.display = 'grid';
-        wheelGame.style.display = 'none';
-    } else if(e.target.className === 'wheelBtn') {
-        wheelGame.style.display = 'grid';
-        dashboard.style.display = 'none';
+function openDisplay(button, className) {
+    if(event.target.className === className) {
+        button.style.display = 'grid';
+    }else {
+        button.style.display = 'none';
     }
+}
+
+buttons.addEventListener('click', e => {
+    openDisplay(dashboard, 'dashboardBtn');
+    openDisplay(wheelGame, 'wheelBtn');
 });
