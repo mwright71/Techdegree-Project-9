@@ -91,6 +91,33 @@ img {
     "buttons"
     "info";
 }
+#projectBtns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#projectBtns button {
+    width: 300px;
+    margin: 10px;
+    padding: 5px;
+    background-color: transparent;
+    font-family: HomepageBaukasten;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    box-shadow: none;
+    border: 2px solid black;
+    border-radius: 5px;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+#projectBtns button:hover {
+    background-color: #58595B;
+    opacity: 0.8;
+    color: #fff;
+    transform: scale(1.1);
+}
 @media (min-width: 1024px){
     /* img {
         width: 50%;
@@ -105,7 +132,7 @@ img {
         "buttons";
     }
 }
-#dashboard,
-#wheel {
+#wheel,
+#form {
     display: none;
 }
