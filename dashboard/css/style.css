@@ -1,0 +1,1811 @@
+@charset "UTF-8";
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type=checkbox],
+[type=radio] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type=search] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none;
+}
+
+/*
+* CSS TOGGLE SWITCH
+*
+* Ionuț Colceriu - ghinda.net
+* https://github.com/ghinda/css-toggle-switch
+*
+*/
+/* supported values are px, rem-calc, em-calc
+ */
+/* imports
+ */
+/* Functions
+ */
+/* Shared
+ */
+/* Hide by default
+ */
+.switch-toggle a,
+.switch-light span span {
+  display: none;
+}
+
+/* We can't test for a specific feature,
+ * so we only target browsers with support for media queries.
+ */
+@media only screen {
+  /* Checkbox
+  */
+  .switch-light {
+    position: relative;
+    display: block;
+    /* simulate default browser focus outlines on the switch,
+    * when the inputs are focused.
+    */
+  }
+
+  .switch-light::after {
+    clear: both;
+    content: "";
+    display: table;
+  }
+
+  .switch-light *,
+.switch-light *:before,
+.switch-light *:after {
+    box-sizing: border-box;
+  }
+
+  .switch-light a {
+    display: block;
+    transition: all 0.2s ease-out;
+  }
+
+  .switch-light label,
+.switch-light > span {
+    /* breathing room for bootstrap/foundation classes.
+    */
+    line-height: 2em;
+  }
+
+  .switch-light input:focus ~ span a,
+.switch-light input:focus + label {
+    outline-width: 2px;
+    outline-style: solid;
+    outline-color: Highlight;
+    /* Chrome/Opera gets its native focus styles.
+    */
+  }
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 0) {
+  .switch-light input:focus ~ span a,
+.switch-light input:focus + label {
+    outline-color: -webkit-focus-ring-color;
+    outline-style: auto;
+  }
+}
+@media only screen {
+  /* don't hide the input from screen-readers and keyboard access
+  */
+  .switch-light input {
+    position: absolute;
+    opacity: 0;
+    z-index: 3;
+  }
+
+  .switch-light input:checked ~ span a {
+    right: 0%;
+  }
+
+  /* inherit from label
+  */
+  .switch-light strong {
+    font-weight: inherit;
+  }
+
+  .switch-light > span {
+    position: relative;
+    overflow: hidden;
+    display: block;
+    min-height: 2em;
+    /* overwrite 3rd party classes padding
+    * eg. bootstrap .alert
+    */
+    padding: 0;
+    text-align: left;
+  }
+
+  .switch-light span span {
+    position: relative;
+    z-index: 2;
+    display: block;
+    float: left;
+    width: 50%;
+    text-align: center;
+    user-select: none;
+  }
+
+  .switch-light a {
+    position: absolute;
+    right: 50%;
+    top: 0;
+    z-index: 1;
+    display: block;
+    width: 50%;
+    height: 100%;
+    padding: 0;
+  }
+
+  /* bootstrap 4 tweaks
+  */
+  .switch-light.row {
+    display: flex;
+  }
+
+  .switch-light .alert-light {
+    color: #333;
+  }
+
+  /* Radio Switch
+  */
+  .switch-toggle {
+    position: relative;
+    display: block;
+    /* simulate default browser focus outlines on the switch,
+    * when the inputs are focused.
+    */
+    /* For callout panels in foundation
+    */
+    padding: 0 !important;
+    /* 2 items
+    */
+    /* 3 items
+    */
+    /* 4 items
+    */
+    /* 5 items
+    */
+    /* 6 items
+    */
+  }
+
+  .switch-toggle::after {
+    clear: both;
+    content: "";
+    display: table;
+  }
+
+  .switch-toggle *,
+.switch-toggle *:before,
+.switch-toggle *:after {
+    box-sizing: border-box;
+  }
+
+  .switch-toggle a {
+    display: block;
+    transition: all 0.2s ease-out;
+  }
+
+  .switch-toggle label,
+.switch-toggle > span {
+    /* breathing room for bootstrap/foundation classes.
+    */
+    line-height: 2em;
+  }
+
+  .switch-toggle input:focus ~ span a,
+.switch-toggle input:focus + label {
+    outline-width: 2px;
+    outline-style: solid;
+    outline-color: Highlight;
+    /* Chrome/Opera gets its native focus styles.
+    */
+  }
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 0) {
+  .switch-toggle input:focus ~ span a,
+.switch-toggle input:focus + label {
+    outline-color: -webkit-focus-ring-color;
+    outline-style: auto;
+  }
+}
+@media only screen {
+  .switch-toggle input {
+    position: absolute;
+    left: 0;
+    opacity: 0;
+  }
+
+  .switch-toggle input + label {
+    position: relative;
+    z-index: 2;
+    display: block;
+    float: left;
+    padding: 0 0.5rem;
+    margin: 0;
+    text-align: center;
+  }
+
+  .switch-toggle a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0;
+    z-index: 1;
+    width: 10px;
+    height: 100%;
+  }
+
+  .switch-toggle label:nth-child(2):nth-last-child(4),
+.switch-toggle label:nth-child(2):nth-last-child(4) ~ label,
+.switch-toggle label:nth-child(2):nth-last-child(4) ~ a {
+    width: 50%;
+  }
+
+  .switch-toggle label:nth-child(2):nth-last-child(4) ~ input:checked:nth-child(3) + label ~ a {
+    left: 50%;
+  }
+
+  .switch-toggle label:nth-child(2):nth-last-child(6),
+.switch-toggle label:nth-child(2):nth-last-child(6) ~ label,
+.switch-toggle label:nth-child(2):nth-last-child(6) ~ a {
+    width: 33.33%;
+  }
+
+  .switch-toggle label:nth-child(2):nth-last-child(6) ~ input:checked:nth-child(3) + label ~ a {
+    left: 33.33%;
+  }
+
+  .switch-toggle label:nth-child(2):nth-last-child(6) ~ input:checked:nth-child(5) + label ~ a {
+    left: 66.66%;
+  }
+
+  .switch-toggle label:nth-child(2):nth-last-child(8),
+.switch-toggle label:nth-child(2):nth-last-child(8) ~ label,
+.switch-toggle label:nth-child(2):nth-last-child(8) ~ a {
+    width: 25%;
+  }
+
+  .switch-toggle label:nth-child(2):nth-last-child(8) ~ input:checked:nth-child(3) + label ~ a {
+    left: 25%;
+  }
+
+  .switch-toggle label:nth-child(2):nth-last-child(8) ~ input:checked:nth-child(5) + label ~ a {
+    left: 50%;
+  }
+
+  .switch-toggle label:nth-child(2):nth-last-child(8) ~ input:checked:nth-child(7) + label ~ a {
+    left: 75%;
+  }
+
+  .switch-toggle label:nth-child(2):nth-last-child(10),
+.switch-toggle label:nth-child(2):nth-last-child(10) ~ label,
+.switch-toggle label:nth-child(2):nth-last-child(10) ~ a {
+    width: 20%;
+  }
+
+  .switch-toggle label:nth-child(2):nth-last-child(10) ~ input:checked:nth-child(3) + label ~ a {
+    left: 20%;
+  }
+
+  .switch-toggle label:nth-child(2):nth-last-child(10) ~ input:checked:nth-child(5) + label ~ a {
+    left: 40%;
+  }
+
+  .switch-toggle label:nth-child(2):nth-last-child(10) ~ input:checked:nth-child(7) + label ~ a {
+    left: 60%;
+  }
+
+  .switch-toggle label:nth-child(2):nth-last-child(10) ~ input:checked:nth-child(9) + label ~ a {
+    left: 80%;
+  }
+
+  .switch-toggle label:nth-child(2):nth-last-child(12),
+.switch-toggle label:nth-child(2):nth-last-child(12) ~ label,
+.switch-toggle label:nth-child(2):nth-last-child(12) ~ a {
+    width: 16.6%;
+  }
+
+  .switch-toggle label:nth-child(2):nth-last-child(12) ~ input:checked:nth-child(3) + label ~ a {
+    left: 16.6%;
+  }
+
+  .switch-toggle label:nth-child(2):nth-last-child(12) ~ input:checked:nth-child(5) + label ~ a {
+    left: 33.2%;
+  }
+
+  .switch-toggle label:nth-child(2):nth-last-child(12) ~ input:checked:nth-child(7) + label ~ a {
+    left: 49.8%;
+  }
+
+  .switch-toggle label:nth-child(2):nth-last-child(12) ~ input:checked:nth-child(9) + label ~ a {
+    left: 66.4%;
+  }
+
+  .switch-toggle label:nth-child(2):nth-last-child(12) ~ input:checked:nth-child(11) + label ~ a {
+    left: 83%;
+  }
+
+  /* Candy Theme
+  * Based on the "Sort Switches / Toggles (PSD)" by Ormal Clarck
+  * http://www.premiumpixels.com/freebies/sort-switches-toggles-psd/
+  */
+  .switch-toggle.switch-candy,
+.switch-light.switch-candy > span {
+    background-color: #2d3035;
+    border-radius: 3px;
+    box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.3), 0 1px 0 rgba(255, 255, 255, 0.2);
+  }
+
+  .switch-light.switch-candy span span,
+.switch-light.switch-candy input:checked ~ span span:first-child,
+.switch-toggle.switch-candy label {
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 1px 1px 1px #191b1e;
+  }
+
+  .switch-light.switch-candy input ~ span span:first-child,
+.switch-light.switch-candy input:checked ~ span span:nth-child(2),
+.switch-candy input:checked + label {
+    color: #333;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  }
+
+  .switch-candy a {
+    border: 1px solid #333;
+    border-radius: 3px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2), inset 0 1px 1px rgba(255, 255, 255, 0.45);
+    background-color: #70c66b;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.2), transparent);
+  }
+
+  .switch-candy-blue a {
+    background-color: #38a3d4;
+  }
+
+  .switch-candy-yellow a {
+    background-color: #f5e560;
+  }
+
+  /* iOS Theme
+  */
+  .switch-ios.switch-light span span {
+    color: #888b92;
+  }
+
+  .switch-ios.switch-light a {
+    left: 0;
+    top: 0;
+    width: 2rem;
+    height: 2rem;
+    background-color: #fff;
+    border-radius: 100%;
+    border: 0.25rem solid #D8D9DB;
+    transition: all 0.2s ease-out;
+  }
+
+  .switch-ios.switch-light > span {
+    display: block;
+    width: 100%;
+    height: 2rem;
+    background-color: #D8D9DB;
+    border-radius: 1.75rem;
+    transition: all 0.4s ease-out;
+  }
+
+  .switch-ios.switch-light > span span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    line-height: 1.875rem;
+    vertical-align: middle;
+    transition: all 0.2s ease-out;
+  }
+
+  .switch-ios.switch-light > span span:first-of-type {
+    opacity: 1;
+    padding-left: 1.875rem;
+  }
+
+  .switch-ios.switch-light > span span:last-of-type {
+    padding-right: 1.875rem;
+  }
+
+  .switch-ios.switch-light input:checked ~ span a {
+    left: 100%;
+    border-color: #4BD865;
+    margin-left: -2rem;
+  }
+
+  .switch-ios.switch-light input:checked ~ span {
+    border-color: #4BD865;
+    box-shadow: inset 0 0 0 30px #4BD865;
+  }
+
+  .switch-ios.switch-light input:checked ~ span span:first-of-type {
+    opacity: 0;
+  }
+
+  .switch-ios.switch-light input:checked ~ span span:last-of-type {
+    opacity: 1;
+    color: #fff;
+  }
+
+  .switch-ios.switch-toggle {
+    background-color: #D8D9DB;
+    border-radius: 30px;
+    box-shadow: inset rgba(0, 0, 0, 0.1) 0 1px 0;
+  }
+
+  .switch-ios.switch-toggle a {
+    background-color: #4BD865;
+    border: 0.125rem solid #D8D9DB;
+    border-radius: 1.75rem;
+    transition: all 0.12s ease-out;
+  }
+
+  .switch-ios.switch-toggle label {
+    height: 2.4em;
+    color: #888b92;
+    line-height: 2.4em;
+    vertical-align: middle;
+  }
+
+  .switch-ios input:checked + label {
+    color: #3e4043;
+  }
+
+  /* Holo Theme
+  */
+  .switch-toggle.switch-holo,
+.switch-light.switch-holo > span {
+    background-color: #464747;
+    border-radius: 1px;
+    box-shadow: inset rgba(0, 0, 0, 0.1) 0 1px 0;
+    color: #fff;
+    text-transform: uppercase;
+  }
+
+  .switch-holo label {
+    color: #fff;
+  }
+
+  .switch-holo > span span {
+    opacity: 0;
+    transition: all 0.1s;
+  }
+
+  .switch-holo > span span:first-of-type {
+    opacity: 1;
+  }
+
+  .switch-holo > span span,
+.switch-holo label {
+    font-size: 85%;
+    line-height: 2.15625rem;
+  }
+
+  .switch-holo a {
+    background-color: #666;
+    border-radius: 1px;
+    box-shadow: inset rgba(255, 255, 255, 0.2) 0 1px 0, inset rgba(0, 0, 0, 0.3) 0 -1px 0;
+  }
+
+  /* Selected ON switch-light
+  */
+  .switch-holo.switch-light input:checked ~ span a {
+    background-color: #0E88B1;
+  }
+
+  .switch-holo.switch-light input:checked ~ span span:first-of-type {
+    opacity: 0;
+  }
+
+  .switch-holo.switch-light input:checked ~ span span:last-of-type {
+    opacity: 1;
+  }
+
+  /* Material Theme
+  */
+  /* switch-light
+  */
+  .switch-light.switch-material a {
+    top: -0.1875rem;
+    width: 1.75rem;
+    height: 1.75rem;
+    border-radius: 50%;
+    background: #fafafa;
+    box-shadow: 0 0.125rem 0.125rem 0 rgba(0, 0, 0, 0.14), 0 0.1875rem 0.125rem -0.125rem rgba(0, 0, 0, 0.2), 0 0.125rem 0.25rem 0 rgba(0, 0, 0, 0.12);
+    transition: right 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .switch-material.switch-light {
+    overflow: visible;
+  }
+
+  .switch-material.switch-light::after {
+    clear: both;
+    content: "";
+    display: table;
+  }
+
+  .switch-material.switch-light > span {
+    overflow: visible;
+    position: relative;
+    top: 0.1875rem;
+    width: 3.25rem;
+    height: 1.5rem;
+    min-height: auto;
+    border-radius: 1rem;
+    background: rgba(0, 0, 0, 0.26);
+  }
+
+  .switch-material.switch-light span span {
+    position: absolute;
+    clip: rect(0 0 0 0);
+  }
+
+  .switch-material.switch-light input:checked ~ span a {
+    right: 0;
+    background: #3f51b5;
+    box-shadow: 0 0.1875rem 0.25rem 0 rgba(0, 0, 0, 0.14), 0 0.1875rem 0.1875rem -0.125rem rgba(0, 0, 0, 0.2), 0 0.0625rem 0.375rem 0 rgba(0, 0, 0, 0.12);
+  }
+
+  .switch-material.switch-light input:checked ~ span {
+    background: rgba(63, 81, 181, 0.5);
+  }
+
+  /* switch-toggle
+  */
+  .switch-toggle.switch-material {
+    overflow: visible;
+  }
+
+  .switch-toggle.switch-material::after {
+    clear: both;
+    content: "";
+    display: table;
+  }
+
+  .switch-toggle.switch-material a {
+    top: 48%;
+    width: 0.375rem !important;
+    height: 0.375rem;
+    margin-left: 0.25rem;
+    background: #3f51b5;
+    border-radius: 100%;
+    transform: translateY(-50%);
+    transition: transform 0.4s ease-in;
+  }
+
+  .switch-toggle.switch-material label {
+    color: rgba(0, 0, 0, 0.54);
+    font-size: 1em;
+  }
+
+  .switch-toggle.switch-material label:before {
+    content: "";
+    position: absolute;
+    top: 48%;
+    left: 0;
+    display: block;
+    width: 0.875rem;
+    height: 0.875rem;
+    border-radius: 100%;
+    border: 0.125rem solid rgba(0, 0, 0, 0.54);
+    transform: translateY(-50%);
+  }
+
+  .switch-toggle.switch-material input:checked + label:before {
+    border-color: #3f51b5;
+  }
+
+  /* ripple
+  */
+  .switch-light.switch-material > span:before,
+.switch-light.switch-material > span:after,
+.switch-toggle.switch-material label:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    display: block;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 100%;
+    background: #3f51b5;
+    opacity: 0.4;
+    margin-left: -1.25rem;
+    margin-top: -1.25rem;
+    transform: scale(0);
+    transition: opacity 0.4s ease-in;
+  }
+
+  .switch-light.switch-material > span:after {
+    left: auto;
+    right: 0;
+    margin-left: 0;
+    margin-right: -1.25rem;
+  }
+
+  .switch-toggle.switch-material label:after {
+    width: 3.25rem;
+    height: 3.25rem;
+    margin-top: -0.75rem;
+  }
+
+  @keyframes materialRipple {
+    0% {
+      transform: scale(0);
+    }
+    20% {
+      transform: scale(1);
+    }
+    100% {
+      opacity: 0;
+      transform: scale(1);
+    }
+  }
+  .switch-material.switch-light input:not(:checked) ~ span:after,
+.switch-material.switch-light input:checked ~ span:before,
+.switch-toggle.switch-material input:checked + label:after {
+    animation: materialRipple 0.4s ease-in;
+  }
+
+  /* trick to prevent the default checked ripple animation from showing
+  * when the page loads.
+  * the ripples are hidden by default, and shown only when the input is focused.
+  */
+  .switch-light.switch-material.switch-light input ~ span:before,
+.switch-light.switch-material.switch-light input ~ span:after,
+.switch-material.switch-toggle input + label:after {
+    visibility: hidden;
+  }
+
+  .switch-light.switch-material.switch-light input:focus:checked ~ span:before,
+.switch-light.switch-material.switch-light input:focus:not(:checked) ~ span:after,
+.switch-material.switch-toggle input:focus:checked + label:after {
+    visibility: visible;
+  }
+}
+/* Bugfix for older Webkit, including mobile Webkit. Adapted from
+ * http://css-tricks.com/webkit-sibling-bug/
+ */
+@media only screen and (-webkit-max-device-pixel-ratio: 2) and (max-device-width: 80rem) {
+  .switch-light,
+.switch-toggle {
+    -webkit-animation: webkitSiblingBugfix infinite 1s;
+  }
+}
+@-webkit-keyframes webkitSiblingBugfix {
+  from {
+    -webkit-transform: translate3d(0, 0, 0);
+  }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+  }
+}
+.gridContainer,
+main,
+nav,
+.dashTop,
+.traffic,
+.trafficHeader,
+.social,
+.membersArea,
+.socialContainer {
+  display: grid;
+}
+
+header {
+  grid-area: header;
+}
+
+nav {
+  grid-area: nav;
+  margin: 0 auto;
+  width: 100%;
+  grid-template-columns: 1fr;
+  justify-items: center;
+}
+@media (min-width: 768px) {
+  nav {
+    grid-template-columns: 50px;
+    grid-template-rows: repeat(4, 50px);
+    z-index: 10;
+  }
+}
+
+main {
+  grid-area: main;
+  grid-template-columns: 100%;
+  grid-template-rows: auto;
+  grid-template-areas: "dashtop" "alertbar" "trafficmain" "daily" "mobile" "social" "members" "activity" "message" "settings";
+}
+@media (min-width: 768px) {
+  main {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "dashtop dashtop" "alertbar alertbar" "trafficmain trafficmain" "daily mobile" "social social" "members members";
+  }
+}
+
+.gridContainer {
+  grid-template-columns: 100%;
+  grid-template-rows: 60px 60px 1fr;
+  grid-template-areas: "header" "nav" "main";
+}
+@media (min-width: 768px) {
+  .gridContainer {
+    grid-template-columns: 60px 1fr;
+    grid-template-rows: 60px 1fr;
+    grid-template-areas: "header header" "nav main";
+  }
+}
+
+.twitter {
+  grid-area: twitter;
+}
+
+.facebook {
+  grid-area: facebook;
+}
+
+.google {
+  grid-area: google;
+}
+
+.socialContainer {
+  grid-template-columns: 1fr;
+  justify-items: center;
+  grid-template-areas: "twitter" "facebook" "google";
+}
+@media (min-width: 768px) {
+  .socialContainer {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "twitter facebook google";
+  }
+}
+
+.headline {
+  grid-area: headline;
+}
+
+.headersearch {
+  grid-area: headersearch;
+}
+
+.dashTop {
+  grid-area: dashtop;
+  grid-template-columns: minmax(min-content, 125px) 1fr;
+  grid-template-areas: "headline headersearch";
+}
+
+.traffic h3 {
+  grid-area: traffichead;
+  grid-column-start: 1;
+}
+
+.trafficHeader {
+  grid-area: traffic;
+}
+
+.trafficNav {
+  grid-area: trafficnav;
+}
+
+.traffic {
+  grid-area: trafficmain;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "traffic traffic" "trafficchart trafficchart";
+}
+
+.icon {
+  grid-area: icon;
+}
+
+.widgetContainerFull {
+  grid-area: trafficchart;
+}
+
+.alert {
+  grid-area: alertbar;
+}
+
+.daily {
+  grid-area: daily;
+}
+
+.mobile {
+  grid-area: mobile;
+}
+
+.social {
+  grid-area: social;
+}
+
+.socialImage {
+  grid-area: siteicon;
+}
+
+.socialText {
+  grid-area: siteinfo;
+}
+
+.membersArea {
+  grid-area: members;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, 1fr);
+  justify-items: center;
+  grid-gap: 5px;
+  grid-template-areas: "members1" "members2" "members3" "members4";
+}
+@media (min-width: 768px) {
+  .membersArea {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 5px;
+    grid-template-areas: "members1 members2" "members3 members4";
+  }
+}
+
+.members {
+  grid-area: members1;
+}
+
+.activity {
+  grid-area: members2;
+}
+
+.message {
+  grid-area: members3;
+}
+
+.settings {
+  grid-area: members4;
+}
+
+header,
+.profileInfo,
+.headerSearch,
+.trafficNav,
+.icon,
+.alertBar,
+.socialBox,
+.membersContainer,
+.memberInfo,
+.members,
+.activity,
+.activityContainer,
+.activityInfo,
+.settingsToggle,
+.settings,
+.message,
+.widgetContainer,
+.settingsItem,
+.emailItem,
+.profileItem,
+#toggle-container .switch-light {
+  display: flex;
+}
+
+header {
+  justify-content: space-between;
+  align-items: center;
+  grid-area: header;
+}
+
+.profileInfo {
+  align-items: center;
+}
+
+.headerSearch,
+.trafficNav {
+  justify-content: flex-end;
+}
+
+.icon,
+.socialBox {
+  align-items: center;
+  justify-content: center;
+}
+
+.daily {
+  grid-area: daily;
+}
+
+.mobile {
+  grid-area: mobile;
+}
+
+.alertBar {
+  justify-content: space-between;
+}
+
+.membersContainer {
+  justify-content: space-between;
+}
+
+.memberInfo,
+.activityInfo {
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.members,
+.activity,
+.message,
+.settingsToggle,
+.settings,
+.settingsItem,
+.widgetContainer {
+  flex-direction: column;
+}
+
+.settingsItem {
+  align-content: flex-start;
+}
+
+#toggle-container .switch-light {
+  flex-direction: column;
+}
+
+@keyframes shake {
+  20% {
+    transform: scale(1.1);
+  }
+  50% {
+    transform: rotate(-10deg) scale(1.1);
+  }
+  80% {
+    transform: rotate(5deg) scale(1.1);
+  }
+  100% {
+    transform: rotate(0) scale(1);
+  }
+}
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #b2b2b2;
+}
+
+header {
+  background-color: #7377bf;
+}
+
+header h1 {
+  margin-left: 10px;
+  color: #fff;
+  font-size: 24px;
+}
+
+h2 {
+  color: #b2b2b2;
+  font-weight: 300;
+  margin: 15px;
+}
+
+h3 {
+  margin: 15px;
+  font-size: 1rem;
+  color: #b2b2b2;
+  font-weight: 300;
+}
+@media (min-width: 768px) {
+  h3 {
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 1024px) {
+  h3 {
+    font-size: 2rem;
+  }
+}
+
+nav {
+  background-color: #4d4c72;
+}
+
+nav img {
+  height: 30px;
+  width: 30px;
+  margin: 15px;
+}
+
+.bell {
+  height: 30px;
+  width: 30px;
+  position: relative;
+}
+
+.iconBell g {
+  transform-origin: 50% 50%;
+  transform-box: fill-box;
+}
+
+.notifyBell:hover {
+  animation: shake 1s backwards;
+  cursor: pointer;
+}
+
+.notifications {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 20px;
+  background: #5dd2d6;
+  overflow: hidden;
+  width: 200px;
+  border: 1px solid #5dd2d6;
+  border-radius: 3px;
+  transform-origin: 50% 0;
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .notifications {
+    width: 250px;
+  }
+}
+.notifications li {
+  color: #fff;
+  font-size: 0.8rem;
+  list-style-type: none;
+  position: relative;
+}
+
+.notifications li:not(:last-of-type) {
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.notifications li .close {
+  top: 2px;
+  right: -5px;
+}
+
+.notifications li .close:hover {
+  cursor: pointer;
+}
+
+.notifications a {
+  color: #ebfafa;
+  font-size: 0.75rem;
+  font-style: italic;
+  text-decoration: none;
+}
+
+.ping-dot {
+  background: #3feef4;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.close {
+  background: url(../icons/close.png);
+  background-size: contain;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: 17px;
+  right: 13px;
+}
+
+.alertClose:hover {
+  cursor: pointer;
+}
+
+.profileInfo {
+  padding-right: 20px;
+  color: white;
+}
+
+.verticalLine {
+  height: 30px;
+  border-left: 1px black solid;
+  margin: 0 20px;
+}
+
+.profileImage {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  margin-right: 30px;
+}
+
+.profileName {
+  color: #fff;
+}
+
+.headerSearch {
+  border: 1px solid #7377bf;
+  background-color: #b2b2b2;
+}
+
+.search {
+  background-color: white;
+  margin: 15px;
+  width: 60%;
+  height: 35px;
+  border: 1px solid #e3e3e3;
+  border-radius: 5px;
+}
+
+.search::placeholder {
+  font-style: italic;
+  font-size: 18px;
+  padding: 10px;
+}
+
+.trafficHeader {
+  width: 90vw;
+}
+
+.timeFrame {
+  margin: 10px;
+  background: none;
+  border: none;
+  color: #b2b2b2;
+  font-size: 1rem;
+}
+@media (min-width: 768px) {
+  .timeFrame {
+    font-size: 1.2rem;
+  }
+}
+
+.timeFrame:focus {
+  text-decoration: none;
+  background-color: #81c98f;
+  color: #fff;
+  border-radius: 10px;
+  outline: none;
+}
+
+.timeFrame:hover {
+  cursor: pointer;
+}
+
+.widgetContainerFull {
+  width: 90vw;
+  margin: 15px;
+}
+
+.widgetContainerHalf {
+  width: 90vw;
+  margin: 15px;
+}
+@media (min-width: 768px) {
+  .widgetContainerHalf {
+    width: 42vw;
+  }
+}
+
+.icon {
+  fill: white;
+  padding: 5px;
+  width: 35px;
+  height: 35px;
+  margin: 10px;
+  text-align: center;
+  transform-origin: 50% 50%;
+  transform-box: fill-box;
+}
+@media (min-width: 768px) {
+  .icon {
+    width: 45px;
+    height: 45px;
+  }
+}
+@media (min-width: 768px) {
+  .icon {
+    width: 65px;
+    height: 65px;
+  }
+}
+
+.alertBar {
+  background-color: #7377bf;
+  margin: 0 auto;
+  margin-top: 15px;
+  width: 85%;
+  border-radius: 5px;
+  color: white;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-size: 18px;
+}
+
+.socialContainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  grid-template-areas: "twitter" "facebook" "google";
+}
+@media (min-width: 768px) {
+  .socialContainer {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "twitter facebook google";
+  }
+}
+
+.socialBox {
+  background-color: #fff;
+  width: 90%;
+  border: 1px solid #7377bf;
+  border-radius: 5px;
+  margin: 15px;
+}
+
+.socialText {
+  line-height: 0.3px;
+  margin-left: 15px;
+}
+
+.socialText h4 {
+  color: #7377bf;
+  font-size: 0.95rem;
+}
+@media (min-width: 1024px) {
+  .socialText h4 {
+    font-size: 1rem;
+  }
+}
+
+.socialText p {
+  color: brown;
+  font-size: 1.2rem;
+}
+@media (min-width: 1024px) {
+  .socialText p {
+    font-size: 2rem;
+  }
+}
+
+.socialImage {
+  border-radius: 50%;
+  background-color: #7377bf;
+  margin: 15px;
+}
+
+.members,
+.activity,
+.social {
+  width: 100%;
+}
+
+.membersContainer,
+.activityContainer {
+  margin: 10px 15px;
+  padding: 0;
+  border-top: 1px solid #7377bf;
+}
+
+.first {
+  border: none;
+}
+
+.memberImage {
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  margin: auto;
+}
+@media (min-width: 768px) {
+  .memberImage {
+    width: 60px;
+    height: 60px;
+  }
+}
+@media (min-width: 1024px) {
+  .memberImage {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+.membersText,
+.activityText {
+  margin-left: 10px;
+}
+
+.memberInfo,
+.activityInfo {
+  margin-top: 20px;
+}
+
+.membersText p,
+.activityText p {
+  font-size: 1rem;
+  margin: 0;
+}
+@media (min-width: 768px) {
+  .membersText p,
+.activityText p {
+    font-size: 1.1rem;
+  }
+}
+@media (min-width: 1024px) {
+  .membersText p,
+.activityText p {
+    font-size: 1.3rem;
+  }
+}
+
+.membersText a {
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+@media (min-width: 768px) {
+  .membersText a {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 1024px) {
+  .membersText a {
+    font-size: 1.1rem;
+  }
+}
+
+.message,
+.settings {
+  width: 100%;
+}
+
+.formField,
+.settingsTimezone {
+  height: 50px;
+  margin-bottom: 25px;
+}
+
+.settingsTimezone {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.formArea {
+  height: 175px;
+  margin-bottom: 25px;
+}
+
+.widgetContainer input,
+.widgetContainer textarea,
+.settingsTimezone {
+  border: 1px solid #7377bf;
+  border-radius: 3px;
+}
+
+.formField::placeholder,
+.formArea::placeholder {
+  font-style: italic;
+  padding: 10px;
+}
+
+.buttonPrimary,
+#save {
+  background-color: #7377bf;
+  color: #fff;
+  height: 40px;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+#cancel {
+  background-color: #b2b2b2;
+  color: #fff;
+  height: 40px;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.emailItem,
+.profileItem {
+  margin: 20px 0 50px 0;
+}
+
+#toggleContainer,
+.widgetContainer,
+.settingsButtons,
+.switch-light {
+  margin: 15px;
+}
+
+.emailItem p,
+.profileItem p {
+  margin: 0 10px 10px 0;
+  font-size: 1rem;
+}
+@media (min-width: 768px) {
+  .emailItem p,
+.profileItem p {
+    font-size: 1.1rem;
+  }
+}
+@media (min-width: 1024px) {
+  .emailItem p,
+.profileItem p {
+    font-size: 1.3rem;
+  }
+}
+
+.settingsButtons button {
+  width: 45%;
+  margin: 10px;
+}
+
+.white {
+  background-color: #fff;
+}
+
+.formField ul {
+  background: #e6e6e6;
+  padding: 0;
+  margin: 10px;
+  width: 100%;
+  position: absolute;
+  top: 40px;
+  display: none;
+}
+
+li {
+  font-size: 1rem;
+  color: blue;
+  margin-top: 15px;
+}
+
+#toggle-container .switch-light {
+  display: flex;
+  margin-bottom: 55px;
+  flex-direction: column;
+}
+
+#toggle-container .switch-light strong {
+  margin-bottom: 5px;
+}
+
+select {
+  width: 100%;
+}
+
+/*# sourceMappingURL=style.css.map */

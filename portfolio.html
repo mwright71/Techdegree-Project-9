@@ -5,8 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/contact.css">
-        <title>Contact Me</title>
+        <link rel="stylesheet" href="css/portfolio.css">
+        <title>My Portfolio</title>
     </head>
     <body class="secPagesBody">
         <div class="container">
@@ -85,18 +85,43 @@
                     </div>
                 </div>
                 <div class="primary secPrimary">
-                    <div class="contact">
-                        <h1>Contact Me</h1>
-                        <p>I would love to hear from you. You can reach me at <a href="mailto:matt@mattwright.codes">matt@mattwright.codes</a> or feel free to follow me on one of the social media networks listed below. I am currently looking for both freelance and employment opportunities and look forward to hearing from you. </p>
+                    <div class="top">
+                        <h1>Portfolio</h1>
+                        <p>My portfolio shows skills in HTML, CSS, and JavaScript, along with some SCSS thrown in there. Each portfolio piece will have links to the live project, as well as the GitHub repo so you can see the code for each project.  </p>
                     </div>
-                    <div class="btn">
-                        <button>Portfolio</button>
-                        <button>Skills</button>
+                    <div id="projectBtns">
+                        <button class="dashboardBtn">Web App Dashboard</button>
+                        <button class="wheelBtn">Wheel of Success</button>
+                    </div>
+                    <div class="dashboard layout"id="dashboard">
+                        <h3 class="projectName">Web App Dashboard</h3>
+                        <img class="projectImage" src="./images/dashboard.png" alt="dashboard image">
+                        <div class="btns">
+                            <a href="https://github.com/mwright71/Techdegree-Proect-7" target="_blank"><button>See the code</button></a>
+                            <a href="dashboard.html" target="_blank"><button>See it live</button></a>
+                        </div>
+                        <div class="projectInfo">
+                            <p>This project was a CSS beast, using both CSS Grids and Flex to make a user-friendly layout. In the live version, you will notice how the line graph is interactive, using chart.js to loop through different data sets for each time frame.</p>
+                            <p>This project also utilizez local storage to remember the settings selected. Perhaps the funnest part to this project was using JavaScript to produce the alert notification, as well as the notification's bell alerts. </p>
+                        </div>
+                    </div>
+                    <div class="wheel layout" id="wheel">
+                        <h3 class="projectName">Wheel of Success</h3>
+                        <img class="projectImage" src="/images/wheel.png" alt="dashboard image">
+                        <div class="btns">
+                            <a href="https://github.com/mwright71/Techdegree-Project-6" target="_blank"><button>See the code</button></a>
+                            <a href="wheel.html" target="_blank"><button>See it live</button></a>
+                        </div>
+                        <div class="projectInfo">
+                            <p>This was an extremely fun, yet challenging, project to do. The concept of the game is to fill in the missing letters before running out of lives.</p>
+                            <p>This project is powered by pure JavaScript. Upon loading, the game shows a random phrase; each time it's loaded a different phrase is shown.</p>
+                            <p>This project also uses CSS animations when the correct letter is chosen. Take a stab at it and see if you can guess the phrase before all your hearts are gone.</p>
+                        </div>
                     </div>
 
-                </div>
-                
+                </div>           
             </main>
         </div>
+        <script src="/js/script.js"></script>
     </body>
 </html>

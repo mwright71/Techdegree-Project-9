@@ -1,0 +1,454 @@
+$main: #7377bf;
+$nav: #4d4c72;
+$main-background: #b2b2b2;
+$sec-background: #fff;
+$header-text: #b2b2b2;
+$btn-click: #81c98f;
+@keyframes shake {
+    20% {
+      transform: scale(1.1);
+    }
+    50% {
+      transform: rotate(-10deg) scale(1.1);
+    }
+    80% {
+      transform: rotate(5deg) scale(1.1);
+    }
+    100% {
+      transform: rotate(0) scale(1);
+    }
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: $main-background;
+}
+header {
+    background-color: $main;
+}
+header h1 {
+    margin-left: 10px;
+    color: #fff;
+    font-size: 24px;
+
+}
+h2 {
+    color: $header-text;
+    font-weight: 300;
+    margin: 15px;
+}
+h3 {
+    margin: 15px;
+    font-size: 1rem;
+    color: $header-text;
+    font-weight: 300;
+    @media (min-width: 768px) {
+        font-size: 1.5rem;
+    }
+    @media (min-width: 1024px) {
+        font-size: 2rem;
+    }
+}
+
+nav {
+    background-color: $nav;
+}
+nav img {
+    height: 30px;
+    width: 30px;
+    margin: 15px;
+}
+
+
+.bell {
+    height: 30px;
+    width: 30px;
+    position: relative;
+}
+.iconBell g {
+    transform-origin: 50% 50%;
+    transform-box: fill-box;
+}
+.notifyBell:hover {
+    animation: shake 1s backwards;
+    cursor: pointer;
+}
+.notifications {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 20px;
+    background: #5dd2d6;
+    overflow: hidden;
+    width: 200px;
+    border: 1px solid #5dd2d6;
+    border-radius: 3px;
+    transform-origin: 50% 0;
+    display: none;
+}
+    @media (min-width: 768px) {
+    .notifications {
+        width: 250px;
+    }
+}
+.notifications li {
+    color: #fff;
+    font-size: 0.8rem;
+    list-style-type: none;
+    position: relative;
+}
+.notifications li:not(:last-of-type) {
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+.notifications li .close {
+    top: 2px;
+    right: -5px;
+}
+.notifications li .close:hover {
+    cursor: pointer;
+}
+.notifications a {
+    color: #ebfafa;
+    font-size: 0.75rem;
+    font-style: italic;
+    text-decoration: none;
+}
+  
+.ping-dot {
+    background: #3feef4;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+}
+.close {
+    background: url(../icons/close.png);
+    background-size: contain;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 17px;
+    right: 13px;
+}
+.alertClose:hover {
+    cursor: pointer;
+}
+
+.profileInfo {
+    padding-right: 20px;
+    color: white;
+}
+.verticalLine {
+    height: 30px;
+    border-left: 1px black solid;
+    margin: 0 20px;
+}
+.profileImage {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    margin-right: 30px;
+}
+.profileName {
+    color: #fff;
+}
+.headerSearch {
+    border: 1px solid $main;
+    background-color: $main-background;
+}
+.search {
+    background-color: white;
+    margin: 15px;
+    width: 60%;
+    height: 35px;
+    border: 1px solid #e3e3e3;
+    border-radius: 5px; 
+}
+.search::placeholder {
+    font-style: italic;
+    font-size: 18px;
+    padding: 10px;
+}
+.trafficHeader {
+    width: 90vw;
+}
+.timeFrame {
+    margin: 10px;
+    background: none;
+    border: none;
+    color: $header-text;
+    font-size: 1rem;
+    @media (min-width: 768px) {
+        font-size: 1.2rem;
+    }
+}
+.timeFrame:focus {
+    text-decoration: none;
+    background-color: $btn-click;
+    color: #fff;
+    border-radius: 10px;
+    outline: none;
+}
+.timeFrame:hover {
+    cursor: pointer;
+}
+.widgetContainerFull {
+    width: 90vw;
+    margin: 15px;
+}
+.widgetContainerHalf {
+    width: 90vw;
+    margin: 15px;
+    @media (min-width: 768px){
+        width: 42vw;
+    }
+}
+
+.icon {
+    fill: white;
+    padding: 5px;
+    width: 35px;
+    height: 35px;
+    margin: 10px;
+    text-align: center;
+    transform-origin: 50% 50%;
+    transform-box: fill-box;
+    @media (min-width: 768px) {
+        width: 45px;
+        height: 45px;
+    }
+    @media (min-width: 768px) {
+        width: 65px;
+        height: 65px;
+    }
+}
+
+.alertBar {
+    background-color: $main;
+    margin: 0 auto ;
+    margin-top: 15px;
+    width: 85%;
+    border-radius: 5px;
+    color: white;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 18px;
+}
+
+.socialContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    grid-template-areas:
+    "twitter"
+    "facebook"
+    "google";
+    @media (min-width: 768px) {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas:
+        "twitter facebook google";
+    }
+}
+.socialBox {
+    background-color: $sec-background;
+    width: 90%;
+    border: 1px solid $main;
+    border-radius: 5px;
+    margin: 15px;
+}
+.socialText {
+    line-height: .3px;
+    margin-left: 15px;
+
+}
+.socialText h4 {
+    color: $main;
+    font-size: .95rem;
+    @media (min-width: 1024px){
+        font-size: 1rem;
+    }
+}
+.socialText p {
+    color: brown;
+    font-size: 1.2rem;
+    @media (min-width: 768px){
+        // font-size: 2rem;
+    }
+    @media (min-width: 1024px){
+        font-size: 2rem;
+    }
+}
+.socialImage {
+    border-radius: 50%;
+    background-color: $main;
+    margin: 15px;
+}
+.members,
+.activity, 
+.social {
+    width: 100%;
+}
+.membersContainer,
+.activityContainer {
+    margin: 10px 15px;
+    padding: 0;
+    border-top: 1px solid $main;
+}
+.first {
+    border:none;
+}
+.memberImage {
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    margin: auto;
+    @media (min-width: 768px) {
+        width: 60px;
+        height: 60px;
+    }
+    @media (min-width: 1024px) {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+.membersText,
+.activityText {
+    margin-left: 10px;
+}
+.memberInfo,
+.activityInfo {
+    margin-top: 20px;
+}
+
+.membersText p,
+.activityText p {
+    font-size: 1rem;
+    margin: 0;
+    @media (min-width: 768px) {
+        font-size: 1.1rem;
+    }
+    @media (min-width: 1024px) {
+        font-size: 1.3rem;
+    }
+}
+.membersText a {
+    text-decoration: none;
+    font-size: .9rem;
+    @media (min-width: 768px) {
+        font-size: 1rem;
+    }
+    @media (min-width: 1024px) {
+        font-size: 1.1rem;
+    }
+}
+.message,
+.settings {
+    width: 100%;
+}
+
+.formField,
+.settingsTimezone {
+    height: 50px;
+    margin-bottom: 25px;
+}
+.settingsTimezone {
+    width: 90%;
+    margin: 0 auto;
+}
+.formArea {
+    height: 175px;
+    margin-bottom: 25px;
+}
+.widgetContainer input,
+.widgetContainer textarea,
+.settingsTimezone {
+    border: 1px solid $main;
+    border-radius: 3px;
+}
+.formField::placeholder,
+.formArea::placeholder {
+    font-style: italic;
+    padding: 10px;
+}
+
+.buttonPrimary,
+#save {
+    background-color: $main;
+    color: #fff;
+    height: 40px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 5px;
+}
+#cancel {
+    background-color: $header-text;
+    color: #fff;
+    height: 40px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.emailItem,
+.profileItem {
+    margin: 20px 0 50px 0;
+}
+#toggleContainer,
+.widgetContainer,
+.settingsButtons,
+.switch-light {
+    margin: 15px;
+}
+
+.emailItem p,
+.profileItem p {
+    margin: 0 10px 10px 0;
+    font-size: 1rem;
+    @media (min-width: 768px) {
+        font-size: 1.1rem;
+    }
+    @media (min-width: 1024px) {
+        font-size: 1.3rem;
+    }
+}
+.settingsButtons button {
+    width: 45%;
+    margin: 10px;
+}
+
+.white {
+    background-color: $sec-background;
+}
+
+.formField ul {
+    background: #e6e6e6;
+    padding: 0;
+    margin: 10px;
+    width: 100%;
+    position: absolute;
+    top: 40px;
+    display: none;
+}
+li {
+    font-size: 1rem;
+    color: blue;
+    margin-top: 15px;
+}
+
+#toggle-container .switch-light{
+    display:flex;
+    margin-bottom: 55px;
+    flex-direction: column;
+}
+
+#toggle-container .switch-light strong{
+    margin-bottom:5px;
+}
+
+select{
+    width:100%;
+}

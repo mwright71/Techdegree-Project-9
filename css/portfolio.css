@@ -1,0 +1,111 @@
+.secPrimary {
+    display: flex;
+    flex-direction: column;
+
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+h1 {
+    color: #FF8200;
+    font-family: HomepageBaukasten;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    text-align: center;
+}
+
+.primary h3 {
+    color: #FF8200;
+    font-family: HomepageBaukasten;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    text-align: center;
+}
+
+.primary p {
+    font-family: HomepageBaukasten;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    margin: 20px 20px;
+}
+
+img {
+    width: 90%;
+    margin-left: 20px;
+    border: 1px solid #58595B;
+}
+.projectName {
+    grid-area: name;
+}
+.projectImage {
+    grid-area: image;
+    margin: 0 auto;
+}
+.btns {
+    display: flex;
+    grid-area: buttons;
+    margin: 0 auto;
+}
+.btns button {
+    width: 150px;
+    height: 30px;
+    margin: 10px;
+    background-color: transparent;
+    font-family: HomepageBaukasten;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    box-shadow: none;
+    border: 2px solid black;
+    border-radius: 5px;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.btns button:hover {
+    background-color: #58595B;
+    opacity: 0.8;
+    color: #fff;
+    transform: scale(1.2);
+}
+.projectInfo {
+    grid-area: info;
+}
+.layout {
+    border: 2px solid #58595B;
+    border-radius: 5px;
+    margin: 20px;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 40px 1fr;
+    grid-template-areas:
+    "name"
+    "image"
+    "buttons"
+    "info";
+}
+@media (min-width: 1024px){
+    /* img {
+        width: 50%;
+    } */
+    .layout {
+        grid-template-columns:auto;
+        grid-template-rows: 40px 1fr;
+        grid-template-areas:
+        "name"
+        "image"
+        "info"
+        "buttons";
+    }
+}
+#dashboard,
+#wheel {
+    display: none;
+}

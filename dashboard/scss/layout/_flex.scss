@@ -1,0 +1,76 @@
+header,
+.profileInfo,
+.headerSearch,
+.trafficNav,
+.icon,
+.alertBar,
+.socialBox,
+.membersContainer,
+.memberInfo,
+.members,
+.activity,
+.activityContainer,
+.activityInfo,
+.settingsToggle,
+.settings,
+.message,
+.widgetContainer,
+.settingsItem,
+.emailItem,
+.profileItem,
+#toggle-container .switch-light {
+    display: flex;
+}
+header {
+    justify-content: space-between;
+    align-items: center;
+    grid-area: header;
+}
+
+.profileInfo {
+    align-items: center;
+}
+.headerSearch,
+.trafficNav {
+    justify-content: flex-end;
+}
+
+.icon,
+.socialBox {
+    align-items: center;
+    justify-content: center;
+}
+.daily {
+    grid-area: daily;
+}
+.mobile {
+    grid-area: mobile;
+}
+.alertBar {
+    justify-content: space-between;
+}
+
+.membersContainer {
+    justify-content: space-between;
+}
+.memberInfo,
+.activityInfo {
+    // width: 100%;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.members,
+.activity,
+.message,
+.settingsToggle,
+.settings,
+.settingsItem,
+.widgetContainer {
+    flex-direction: column;
+}
+.settingsItem {
+    align-content: flex-start;
+}
+#toggle-container .switch-light{
+    flex-direction: column;
+}
