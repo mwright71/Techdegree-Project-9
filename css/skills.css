@@ -1,7 +1,6 @@
 .secPrimary {
-    display: flex;
-    flex-direction: column;
-
+    display: block;
+    align-content: center;
     background-color: #fff;
     width: 100%;
     margin: 0;
@@ -15,6 +14,7 @@ h1 {
     font-weight: normal;
     font-size: 36px;
     text-align: center;
+    margin: 0 auto;
 }
 
 .primary h3 {
@@ -35,48 +35,6 @@ h1 {
     margin: 20px 20px;
 }
 
-img {
-    max-width: 65%;
-    margin-left: 20px;
-    border: 1px solid #58595B;
-}
-.projectName {
-    grid-area: name;
-}
-.projectImage {
-    grid-area: image;
-    margin: 0 auto;
-}
-.btns {
-    display: flex;
-    grid-area: buttons;
-    margin: 0 auto;
-}
-.btns button {
-    width: 150px;
-    height: 30px;
-    margin: 10px;
-    background-color: transparent;
-    font-family: HomepageBaukasten;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    box-shadow: none;
-    border: 2px solid black;
-    border-radius: 5px;
-    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-.btns button:hover {
-    background-color: #58595B;
-    opacity: 0.8;
-    color: #fff;
-    transform: scale(1.2);
-}
-.projectInfo {
-    grid-area: info;
-}
 .layout {
     border: 2px solid #58595B;
     border-radius: 5px;
@@ -91,3 +49,25 @@ img {
     "buttons"
     "info";
 }
+
+img {
+    width: 25vw;
+}
+
+.contain {
+    margin: 0 auto;
+    margin-top: 50px;
+    max-width: 500px;
+    width: 100vw;
+  }
+  
+  .item {
+    align-items: center;
+    background-color: tomato;
+    color: white;
+    display: flex;
+    height: 300px;
+    justify-content: center;
+  }
+  
+  
