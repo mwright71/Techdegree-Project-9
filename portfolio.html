@@ -87,13 +87,15 @@
                 <div class="primary secPrimary">
                     <div class="top">
                         <h1>Portfolio</h1>
-                        <p>My portfolio shows skills in HTML, CSS, and JavaScript, along with some SCSS thrown in there. Each portfolio piece will have links to the live project, as well as the GitHub repo so you can see the code for each project.  </p>
+                        <p>My portfolio shows skills in HTML, CSS, and JavaScript, along with some SCSS thrown in there. Each portfolio piece will have links to the live project, as well as the GitHub repo so you can see the code for each project. In addition, each project is done from a "mobile-first" design perspective.</p>
                     </div>
                     <div id="projectBtns">
                         <button class="dashboardBtn">Web App Dashboard</button>
                         <button class="wheelBtn">Wheel of Success</button>
                         <button class="formBtn">Form Validator</button>
                         <button class="galleryBtn">Interactive Photo Gallery</button>
+                        <button 
+                        class="directoryBtn">Employee Directory</button>
                     </div>
                     <div class="dashboard layout"id="dashboard">
                         <h3 class="projectName">Web App Dashboard</h3>
@@ -145,7 +147,18 @@
                             <p>One of the features is a working search bar that searches the title and caption of each image to select the right one. Also, using the JQuery lightbox feature, each thumbnail can be expanded to full size and include a caption for each.</p>
                         </div>
                     </div>
-
+                    <div class="directory layout"id="directory">
+                        <h3 class="projectName">Employee Directory</h3>
+                        <img class="projectImage" src="./images/directory.png" alt="directory image">
+                        <div class="btns">
+                            <a href="https://github.com/mwright71/Techdegree-Project-8" target="_blank"><button>See the code</button></a>
+                            <a href="directory.html" target="_blank"><button>See it live</button></a>
+                        </div>
+                        <div class="projectInfo">
+                            <p>This was a fun project to do. It uses Fetch to get a batch os 12 random user's info from  the randomuser.me api. </p>
+                            <p>Then, using pure Javascript (no libraries) it grabs the data from the fetch and displays the user info. Then, also using pure JS, you are able to click on a user and expand their info to show more data. Also, the search bar does work, sorting through each user's name.</p>
+                        </div>
+                    </div>
                 </div>           
             </main>
         </div>
