@@ -343,6 +343,8 @@ template {
 
 header {
   grid-area: header;
+  position: fixed;
+  width: 100%;
 }
 @media (min-width: 1024px) {
   header {
@@ -350,14 +352,9 @@ header {
   }
 }
 
-body {
-  overflow: hidden;
-}
-
 main {
   grid-area: main;
   display: grid;
-  overflow: hidden;
   height: 100vh;
   width: 100vw;
   grid-template-columns: 1fr;
@@ -372,7 +369,11 @@ main {
 
 .primary {
   grid-area: primary;
-  overflow-y: scroll;
+}
+@media (min-width: 1024px) {
+  .primary {
+    overflow: scroll;
+  }
 }
 
 .sidebar {
@@ -485,7 +486,6 @@ header {
 .container {
   position: relative;
   background: url("../../images/tulsa-skyline_bw.png") no-repeat center center/cover;
-  background-size: 100%;
 }
 
 .socialNav {
@@ -610,6 +610,7 @@ header {
   border: 2px solid black;
   border-radius: 5px;
   transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  cursor: pointer;
 }
 
 .btn button:hover {
