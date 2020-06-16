@@ -46,6 +46,9 @@ img {
 .projectImage {
     grid-area: image;
     margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .btns {
     display: flex;
@@ -176,6 +179,9 @@ img {
     }
     .formImage {
         max-width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
 /* #wheel,
