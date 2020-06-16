@@ -80,17 +80,18 @@
     position: fixed;
     top: 0;
     right: 0;
-    width: 30%;
+    width: 60%;
     height: 30%;
     visibility: hidden;
     overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
 }
 .menu {
     background-color: $background;
-    opacity: 0.8;
+    opacity: 0.95;
     @media (min-width: 1024px) {
         visibility: hidden;
     }
@@ -102,7 +103,7 @@
 .menu a {
     text-decoration: none;
     color: $maintext;
-    font-size: 18px;
+    font-size: 22px;
     text-transform: uppercase;
 }
 .menu a:hover {

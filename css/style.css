@@ -367,11 +367,11 @@ main {
   }
 }
 
-.primary {
+.secPrimary {
   grid-area: primary;
 }
 @media (min-width: 1024px) {
-  .primary {
+  .secPrimary {
     overflow: scroll;
   }
 }
@@ -416,12 +416,15 @@ main {
   grid-area: footernav;
   grid-row-start: -1;
 }
-@media (min-width: width 1024px) {
+@media (min-width: 1024px) {
   .footerNav {
     display: flex;
-    justify-items: center;
-    align-items: center;
+    flex-direction: column;
   }
+}
+
+.footerNavIcons {
+  display: block;
 }
 
 .menu2 {
@@ -595,7 +598,10 @@ header {
   margin-top: 50px;
 }
 
-.btn button {
+.btn .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: transparent;
   margin-top: 20px;
   width: 178px;
@@ -605,7 +611,6 @@ header {
   font-weight: normal;
   font-size: 18px;
   letter-spacing: 0.05em;
-  text-transform: uppercase;
   box-shadow: none;
   border: 2px solid black;
   border-radius: 5px;
@@ -613,11 +618,24 @@ header {
   cursor: pointer;
 }
 
-.btn button:hover {
+.btn .button:hover {
   background-color: #58595B;
   opacity: 0.8;
-  color: #fff;
   transform: scale(1.2);
+}
+
+.button a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #58595B;
+}
+
+.button a:hover {
+  color: #fff;
 }
 
 :root {
@@ -702,18 +720,19 @@ header {
   position: fixed;
   top: 0;
   right: 0;
-  width: 30%;
+  width: 60%;
   height: 30%;
   visibility: hidden;
   overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 
 .menu {
   background-color: #FF8200;
-  opacity: 0.8;
+  opacity: 0.95;
 }
 @media (min-width: 1024px) {
   .menu {
@@ -729,7 +748,7 @@ header {
 .menu a {
   text-decoration: none;
   color: #fff;
-  font-size: 18px;
+  font-size: 22px;
   text-transform: uppercase;
 }
 

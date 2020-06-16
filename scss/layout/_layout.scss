@@ -9,9 +9,9 @@ header {
         display: none;
     }
 }
-body {
-    // overflow: hidden;
-}
+// body {
+//     // overflow: hidden;
+// }
 main {
     grid-area: main;
     display: grid;
@@ -27,7 +27,7 @@ main {
         "sidebar primary";
     }
 }
-.primary {
+.secPrimary {
     grid-area: primary;
     @media (min-width: 1024px) {
         overflow: scroll;
@@ -72,11 +72,14 @@ main {
 .footerNav {
     grid-area: footernav;
     grid-row-start: -1;
-    @media (min-width: width 1024px){
+    @media (min-width: 1024px){
         display: flex;
-        justify-items: center;
-        align-items: center;
+        flex-direction: column;
     }
+}
+.footerNavIcons {
+    display: block;
+    
 }
 .menu2 {
     grid-area: menu2;
